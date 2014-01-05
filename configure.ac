@@ -71,7 +71,7 @@ dnl ================================================================
 
 IT_PROG_INTLTOOL([0.40.0])
 
-AM_GNU_GETTEXT_VERSION([0.17])
+AM_GNU_GETTEXT_VERSION([0.18.3])
 AM_GNU_GETTEXT([external])
 
 GETTEXT_PACKAGE=libpeas
