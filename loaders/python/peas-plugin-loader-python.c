@@ -519,14 +519,6 @@ peas_plugin_loader_python_initialize (PeasPluginLoader *loader)
   g_free (argv[0]);
 #endif
 
-  if (!peas_plugin_loader_python_add_module_path (pyloader, PEAS_PYEXECDIR))
-    {
-      g_warning ("Error initializing Python Plugin Loader: "
-                 "failed to add the module path");
-
-      goto python_init_error;
-    }
-
   /* Initialize PyGObject */
   pygobject_init (PYGOBJECT_MAJOR_VERSION,
                   PYGOBJECT_MINOR_VERSION,
